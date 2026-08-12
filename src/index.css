@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-3 outline-accent;
+    outline-style: solid;
+  }
+
+  ::selection {
+    @apply bg-selection text-ink;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: theme("fontFamily.display");
+    font-weight: 600;
+  }
+
+  .page-shell {
+    @apply mx-auto w-full max-w-shell px-2 sm:px-3 md:px-4;
+  }
+
+  .surface-panel {
+    @apply rounded-2xl border border-line/70 shadow-panel;
+    background: color-mix(in srgb, theme("colors.accent") 28%, transparent);
+  }
+}

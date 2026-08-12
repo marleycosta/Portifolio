@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Marley Costa">
+  <rect width="128" height="128" rx="28" fill="#2a2a2a"/>
+  <path
+    fill="#ffffff"
+    d="M30 102
+       L30 70
+       L14 64
+       L30 58
+       L30 28
+       L52 28
+       L64 60
+       L76 28
+       L98 28
+       L98 58
+       L114 64
+       L98 70
+       L98 102
+       L80 102
+       L80 62
+       L70 94
+       L58 94
+       L48 62
+       L48 102
+       Z"
+  />
+</svg>
