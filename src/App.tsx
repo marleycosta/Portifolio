@@ -5,6 +5,7 @@ import { AboutPage } from "@/app/pages/AboutPage";
 import { ContactPage } from "@/app/pages/ContactPage";
 import { HomePage } from "@/app/pages/HomePage";
 import { NotFoundPage } from "@/app/pages/NotFoundPage";
+import { ProjectDetailPage } from "@/app/pages/ProjectDetailPage";
 import { ProjectsPage } from "@/app/pages/ProjectsPage";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="projetos" element={<ProjectsPage />} />
+          <Route path="projetos/:slug" element={<ProjectDetailPage />} />
           <Route path="sobre" element={<AboutPage />} />
           <Route path="contato" element={<ContactPage />} />
           <Route path="projects" element={<Navigate to="/projetos" replace />} />
