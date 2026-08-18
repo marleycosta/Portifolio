@@ -31,18 +31,16 @@ export function ProjectCard({
         aria-label={`Ver projeto ${project.title}`}
       >
         <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-line/70 transition-colors group-hover:border-accent/50">
-          <div className="aspect-[16/9] w-full shrink-0 overflow-hidden bg-[#ecefee]">
-            {cover ? (
-              <img
-                src={cover}
-                alt=""
-                loading="lazy"
-                className="size-full object-contain object-top"
-              />
-            ) : null}
-          </div>
+          {cover ? (
+            <img
+              src={cover}
+              alt=""
+              loading="lazy"
+              className="block h-auto w-full"
+            />
+          ) : null}
 
-          <div className="flex flex-1 flex-col gap-2 border-t border-line/70 bg-[color-mix(in_srgb,#1a3d2e_28%,transparent)] p-4 md:p-5">
+          <div className="flex flex-1 flex-col gap-2 bg-[color-mix(in_srgb,#1a3d2e_28%,transparent)] p-4 md:p-5">
             <div className="flex items-start justify-between gap-2">
               <h2 className="font-display text-xl leading-snug tracking-tight text-ink md:text-2xl">
                 {project.title}

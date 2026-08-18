@@ -14,9 +14,15 @@ export function ProjectsIntro() {
           </h2>
 
           {data.length > 0 ? (
-            <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <ul
+              className="scrollbar-none -mx-1.5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-1.5 pb-1 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-3"
+              aria-label="Projetos em destaque"
+            >
               {data.map((project) => (
-                <li key={project.id} className="min-h-0">
+                <li
+                  key={project.id}
+                  className="w-[82%] shrink-0 snap-start sm:w-auto sm:min-h-0 sm:min-w-0 sm:shrink"
+                >
                   <ProjectCard project={project} variant="compact" />
                 </li>
               ))}

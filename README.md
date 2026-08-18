@@ -37,7 +37,7 @@ npm run preview
 | Links do menu / footer               | `src/app/config/nav.ts`    |
 | Currículo (PDF)                      | `public/cv.pdf`            |
 | Favicon                              | `public/favicon.svg`       |
-| Imagem de compartilhamento (OG)      | `public/og.jpg`            |
+| Imagem de compartilhamento (OG)      | `public/og.png`            |
 | Capturas dos projetos                | `public/projects/`         |
 | Cores e fontes                       | `tailwind.config.ts`       |
 

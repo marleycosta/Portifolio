@@ -1,6 +1,6 @@
 import type { Project, ProjectTipo } from "@/app/types";
 
-export const projects: Project[] = [
+const projects: Project[] = [
   {
     id: 2,
     slug: "articula",

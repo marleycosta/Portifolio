@@ -42,7 +42,7 @@ type ButtonAsAnchor = SharedProps &
     to?: undefined;
   };
 
-export type ButtonProps = ButtonAsButton | ButtonAsLink | ButtonAsAnchor;
+type ButtonProps = ButtonAsButton | ButtonAsLink | ButtonAsAnchor;
 
 export function Button(props: ButtonProps) {
   const {

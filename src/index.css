@@ -41,4 +41,13 @@
     @apply rounded-2xl border border-line/70 shadow-panel;
     background: color-mix(in srgb, theme("colors.accent") 28%, transparent);
   }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
 }
